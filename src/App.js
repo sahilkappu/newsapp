@@ -5,7 +5,7 @@ import News from "./components/News";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default class App extends Component {
-  pageSize = '6';
+  pageSize = 6;
   country = 'in';
   render() {
     return (
@@ -13,7 +13,6 @@ export default class App extends Component {
         <Router>
           <Navbar />
           <Routes>
-          
             <Route
               exact path="/business"
               element={<News pageSize={this.pageSize} key="business" country={this.country} category="business" />}
@@ -25,7 +24,7 @@ export default class App extends Component {
               }
             />
             <Route
-              exact path="/"
+              exact path="/general"
               element={<News pageSize={this.pageSize} key="general" country={this.country} category="general" />}
             />
             <Route

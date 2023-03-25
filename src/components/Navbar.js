@@ -27,7 +27,7 @@ export class Navbar extends Component {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link  text-light" aria-current="page" to="/">
+                  <Link className="nav-link  text-light" aria-current="page" to="/general">
                     Home
                   </Link>
                 </li>
