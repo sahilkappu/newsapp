@@ -43,7 +43,7 @@ setProgress = (progress) => {
               }
             />
             <Route
-              exact path="/general"
+              exact path="/"
               element={<News setProgress={this.setProgress} pageSize={this.pageSize} apiKey={this.apiKey} key="general" country={this.country} category="general" />}
             />
             <Route

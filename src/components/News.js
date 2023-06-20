@@ -47,7 +47,6 @@ export class News extends Component {
       loading: false,
     });
     this.props.setProgress(100);
-
   }
 
   async componentDidMount() {
@@ -84,8 +83,7 @@ export class News extends Component {
   render() {
     return (
       <div className="container my-4">
-        <h2 className="text-center m-4">
-          {" "}
+        <h2 className="text-center" style={{ marginTop: "65px" }}>
           NewsApp - Top {this.capitalizeFirstLetter(this.props.category)}{" "}
           Headlines
         </h2>

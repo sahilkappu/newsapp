@@ -5,7 +5,7 @@ export class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-dark">
+        <nav className="navbar fixed-top navbar-expand-lg bg-dark"> 
           <div className="container-fluid">
             <Link className="navbar-brand text-light" to="/">
               NewsApp
@@ -26,11 +26,6 @@ export class Navbar extends Component {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <Link className="nav-link  text-light" aria-current="page" to="/general">
-                    Home
-                  </Link>
-                </li>
                  <li className="nav-item">
                   <Link className="nav-link  text-light" to="/business">Business </Link></li>
                  <li className="nav-item">
